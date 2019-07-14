@@ -6,6 +6,7 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 18px;
   font-weight: 0;
+  box-sizing: border-box;
 }
 /*Generic styles*/
 h1 {
@@ -88,6 +89,7 @@ header {
 }
 .flex-container-1 {
   display: flex;
+  width: 100%;
 }
 .flex-container-1_h1 {
   font-size: 200%;
@@ -173,10 +175,45 @@ footer:after {
   width: 100%;
   height: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1022px) {
+  body {
+    box-sizing: border-box;
+    font-size: 14px;
+  }
   .flex-container-1,
   .flex__container--2,
   .flex__container--3 {
     flex-wrap: wrap;
+  }
+  .flex-container-1 a,
+  .flex__container--2 a,
+  .flex__container--3 a {
+    margin-left: 50%;
+  }
+  .flex-container-1 img {
+    width: 100%;
+    height: auto;
+  }
+  .flex__container--2 .books {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+  }
+  .tools {
+    width: 200%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .flex__container--3--item h2,
+  .flex__container--3--item p {
+    display: inline-block;
+    margin-left: 300px;
+  }
+  body br {
+    display: none;
+  }
+  .books,
+  .tools {
+    margin-left: 50%;
   }
 }
