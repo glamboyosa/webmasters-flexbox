@@ -6,6 +6,7 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 18px;
   font-weight: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 /*Generic styles*/
@@ -62,6 +63,7 @@ div .sitename {
   margin-right: 10px;
 }
 header {
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
 }
 .head {
@@ -89,6 +91,8 @@ header {
   margin-top: 10px;
 }
 .flex-container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -106,6 +110,8 @@ header {
 /* Next flex container*/
 .flex__container--2 {
   background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .flex__container--2--item {
@@ -136,6 +142,8 @@ header {
 }
 /* FLEX CONTAINER 3*/
 .flex__container--3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 /* Footer */
@@ -178,6 +186,7 @@ footer:after {
 }
 @media screen and (max-width: 1022px) {
   body {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 14px;
   }
@@ -187,6 +196,7 @@ footer:after {
   .flex-container-1,
   .flex__container--2,
   .flex__container--3 {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 180vh;
   }
@@ -224,5 +234,11 @@ footer:after {
   .books,
   .tools {
     margin-left: 50%;
+  }
+  fixed-nav header {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
   }
 }
