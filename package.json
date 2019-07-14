@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "homepage": "https://glamboyosa.github.io/webmasters-flexbox-recreation",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "gh-pages": "^2.0.1"
-  }
+  },
+  "devDependencies": {}
 }
