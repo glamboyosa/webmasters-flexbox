@@ -1,0 +1,15 @@
+{
+  "name": "webmasters-flexbox-recreation",
+  "version": "1.0.0",
+  "description": "A recreation of Google webmasters landing page using the CSS flexbox technology",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

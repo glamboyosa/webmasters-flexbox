@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="shortcut icon" type="image/png" href="CSS/Images/g-logo.jpg" />
+    <title>Google Webmasters Flex</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="head">
+        <img
+          alt="Google"
+          src="//www.google.com/images/branding/googlelogo/1x/googlelogo_color_116x41dp.png"
+          srcset="
+            //www.google.com/images/branding/googlelogo/2x/googlelogo_color_116x41dp.png 2x
+          "
+        />
+        
+        <span class="sign-in">sign in</span>
+      </div>
+
+      <nav>
+        <ul class="main-nav">
+          <li>
+            <a href="#" class="first">Home</a>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+          <li>
+            <a href="#">Learn</a>
+          </li>
+          <li>
+            <a href="#">Connect</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="flex-container-1">
+      <!---I need to do that YT link-->
+      <img src="CSS/Images/Webmasters.PNG" alt="Webmasters" />
+      <div>
+        <h1>
+          You want to be<br />
+          found on the web.<br />
+          We want to help.
+        </h1>
+        <p>
+          Track your site's search performance with Google <br />
+          Search Console and browse around for more <br />
+          webmaster resources.
+        </p>
+        <a href="#" class="btn-console">search console </a>
+        <span style="margin-left: 40px; color: #448aff; display: block; margin-top: 20px; font-size: 130%; text-transform: uppercase;"">Get Help</span>
+      </div>
+    </section>
+    <section class="flex__container--2">
+        <div class="flex__container--2--item">
+          <h1>Get support for <br> your site</h1>
+          <p>If something's wrong with your site, get help fast <br> using our top issues list, support documentation <br> and testing tools.</p>
+          <a href="#" style="text-decoration: none; color:#448aff;">GET HELP</a>
+        </div>
+        <div style="text-align: center">
+          <img src="CSS/Images/tools.svg" alt="tools" class="tools">
+        </div>
+    </section>
+    <section class="flex__container--3">
+      <div>
+        <img src="CSS/Images//books.svg" alt="" class="books">
+      </div>
+      <div class="flex__container--3--item">
+        <h2>Learn to make great <br> sites</h2>
+
+        <p>Interested in making a site that is great for users and shows <br> up well in search results? Check out our courses and guides <br> for making high-quality and search-friendly sites.</p>
+
+          <a href="#" style="text-decoration: none; color:#448aff;">START LEARNING</a>
+      </div>
+    </section>
+    <section class="flex__container--2">
+        <div class="flex__container--2--item">
+          <h1>Stay connected <br> and updated</h1>
+          <p>Stay updated with our news, events and social <br> media communities.</p>
+          <a href="#" style="text-decoration: none; color:#448aff;">SEE WHAT'S NEW</a>
+        </div>
+        <div style="text-align: center">
+          <img src="CSS/Images/team.jpg" alt="team" class="books">
+        </div>
+    </section>
+   <section class="footer">
+     <footer class="sec-footer">
+        <div>
+          <span>Follow us on: <ul><li><i class="icon ion-logo-twitter font-icons" ></i></li> <li><i class="icon ion-logo-youtube font-icons"></i></li></ul></span>
+        </div>
+     </footer>
+     <footer>
+       <div class="flex__container--3">
+         <div>
+           
+           <ul>
+             <span>
+            Webmaster resources
+           </span>
+               <li>Help Center</li>
+               <li>Help Forum</li>
+               <li>Webmaster Academy</li>
+             </ul>
+         </div>
+           <div>
+          
+           <ul>
+              <span>
+            Business essentials
+           </span>
+               <li>Google Business Solutions</li>
+               <li>Google Ads</li>
+               <li>Digital Garage</li>
+             </ul>
+         </div>
+           <div>
+           
+           <ul>
+             <span>
+           Developer Kit
+           </span>
+               <li>Search for Developers</li>
+               <li>Web Fundamentals</li>
+               <li>App Indexing</li>
+             </ul>
+         </div>
+          <div>
+           
+           <ul>
+             <span>
+           Related products
+           </span>
+               <li>Google Analytics</li>
+               <li>Google Apps for Work</li>
+             
+             </ul>
+         </div>
+         
+       </div>
+     </footer>
+     <div class="sec-footer">
+           <ul>
+             <li><i class="icon ion-md-help font-icons"></i>Help</li>
+             <li>Google</li>
+             <li>Privacy</li>
+             <li>Terms</li>
+       
+            </ul>
+         </div>
+   </section>
+   <script>
+     window.addEventListener('scroll', ()=> {
+      const docScroll= window.scrollY;
+ //  console.log(docScroll);
+   if(docScroll > 600){
+     const navigation= document.querySelector('nav');
+     console.log(navigation);
+     console.log(navigation.offsetHeight);
+     document.body.style.paddingTop= navigation.offsetHeight;
+    document.body.classList.add('fixed-nav');
+   } else {
+     document.body.classList.remove('fixed-nav');
+   }
+     })
+   
+   </script>
+  </body>
+</html>
