@@ -9,6 +9,7 @@ body {
   box-sizing: border-box;
 }
 /*Generic styles*/
+
 h1 {
   font-size: 200%;
   padding-top: 20px;
@@ -184,11 +185,15 @@ footer:after {
   .flex__container--2,
   .flex__container--3 {
     flex-wrap: wrap;
+    width: 180vh;
   }
   .flex-container-1 a,
   .flex__container--2 a,
   .flex__container--3 a {
     margin-left: 50%;
+  }
+  .footer {
+    width: 180vh;
   }
   .flex-container-1 img {
     width: 100%;
