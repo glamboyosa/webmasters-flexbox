@@ -181,6 +181,9 @@ footer:after {
     box-sizing: border-box;
     font-size: 14px;
   }
+  .header {
+    width: 180vh;
+  }
   .flex-container-1,
   .flex__container--2,
   .flex__container--3 {
@@ -196,8 +199,9 @@ footer:after {
     width: 180vh;
   }
   .flex-container-1 img {
-    width: 100%;
+    width: 30%;
     height: auto;
+    margin-left: 20%;
   }
   .flex__container--2 .books {
     width: 70%;
