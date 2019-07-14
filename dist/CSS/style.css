@@ -71,6 +71,7 @@ header {
 }
 .main-nav {
   list-style: none;
+  display: block;
 }
 .main-nav li {
   margin-left: 12px;
